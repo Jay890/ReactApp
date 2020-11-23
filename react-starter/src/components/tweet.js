@@ -2,7 +2,7 @@ import React from "react";
 
 const Tweet = () => {
   return (
-    <div>
+    <div className="tweet">
       <h2>Name</h2>
       <p>This is the actual tweet</p>
       <button>Edit</button>
