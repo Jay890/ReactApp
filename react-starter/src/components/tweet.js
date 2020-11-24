@@ -1,10 +1,10 @@
 import React from "react";
 
-const Tweet = () => {
+const Tweet = (props) => {
   return (
     <div className="tweet">
-      <h2>Name</h2>
-      <p>This is the actual tweet</p>
+      <h2>{props.name}</h2>
+      <p>{props.message}</p>
       <button>Edit</button>
       <button>Like</button>
     </div>
