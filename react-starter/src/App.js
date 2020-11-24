@@ -8,12 +8,18 @@ function App() {
 
   const name = "Someone";
   const message = "This is the actual tweet, enjoy!";
+
+  // create click function
+  const sayHelloHandler = (user) => {
+    console.log(`Welcome ${user} do you wish to start the game?`);
+  };
   // JSX code
   return (
     <div className="box">
       <h1>Hello React</h1>
-      <CreateTweet />
-      <TweetList name={name} message={message} />
+      <button onClick={() => sayHelloHandler("Bob")}>Click</button>
+      {/* <CreateTweet />
+      <TweetList name={name} message={message} /> */}
     </div>
   );
 }
