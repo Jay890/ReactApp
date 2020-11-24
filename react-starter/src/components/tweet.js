@@ -1,10 +1,12 @@
 import React from "react";
 
-const Tweet = (props) => {
+const Tweet = ({ name, message }) => {
+  const tweetDate = "24/11/2020";
+
   return (
     <div className="tweet">
-      <h2>{props.name}</h2>
-      <p>{props.message}</p>
+      <h2>{name}</h2>
+      <p>{message}</p>
       <button>Edit</button>
       <button>Like</button>
     </div>
