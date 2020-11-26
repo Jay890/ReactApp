@@ -5,22 +5,13 @@ import TweetList from "./components/TweetList";
 
 function App() {
   // simple JS code e.g variables, functions
-
-  // let name = "Kpop music";
-  const [name, setNames] = useState("Music");
-
-  // create click function
-  const sayHelloHandler = (e) => {
-    setNames("Kpop Music");
-    console.log(name);
-  };
+  const name = "Kpop";
+  const message = "I listen to Kpop music";
   // JSX code
   return (
     <div className="box">
-      <h1>Hello {name}</h1>
-      <button onClick={sayHelloHandler}>Click</button>
-      {/* <CreateTweet />
-      <TweetList name={name} message={message} /> */}
+      <CreateTweet />
+      <TweetList name={name} message={message} />
     </div>
   );
 }
