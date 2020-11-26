@@ -16,12 +16,9 @@ const CreateTweet = () => {
       <textarea
         value={textInput}
         onChange={userInputHander}
-        name=""
-        id=""
         cols="50"
         rows="5"
       ></textarea>
-      <h1 onClick={() => setTextInput("")}>{textInput}</h1>
       <button>Submit</button>
     </form>
   );

@@ -5,13 +5,13 @@ import TweetList from "./components/TweetList";
 
 function App() {
   // simple JS code e.g variables, functions
-  const name = "Kpop";
+  const [name, setName] = useState("Kpop");
   const message = "I listen to Kpop music";
   // JSX code
   return (
     <div className="box">
       <CreateTweet />
-      <TweetList name={name} message={message} />
+      <TweetList setName={setName} name={name} message={message} />
     </div>
   );
 }
