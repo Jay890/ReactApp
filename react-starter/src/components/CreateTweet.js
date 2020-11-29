@@ -3,16 +3,23 @@ import React, { useState } from "react";
 const CreateTweet = () => {
   // State
   const [textInput, setTextInput] = useState("");
+  // create empty array to hold data when hit submit button
+  const [tweets, setTweets] = useState([]);
 
   // Functions
   // change function to get user input
   const userInputHander = (e) => {
-    // console.log(e.target.value);
     setTextInput(e.target.value);
   };
-
+  const submitFunction = (e) => {
+    e.preventDefault();
+    console.log("hii");
+    // spread operator, clone the array and add the textInput
+    setTweets([...tweets, textInput]);
+    setTextInput("");
+  };
   return (
-    <form action="">
+    <form onSubmit={submitFunction} action="">
       <textarea
         value={textInput}
         onChange={userInputHander}
