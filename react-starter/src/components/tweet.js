@@ -3,12 +3,12 @@ import React from "react";
 const Tweet = ({ name, tweets, setTweets, tweet }) => {
   const tweetDate = "24/11/2020";
   const deleteTweet = () => {
-    setTweets(tweets.filter((t) => t !== tweet));
+    setTweets(tweets.filter((state) => state.id !== tweet.id));
   };
   return (
     <div className="tweet">
       <h2>{name}</h2>
-      <p>{tweet}</p>
+      <p>{tweet.message}</p>
       <button>Like</button>
       <button onClick={deleteTweet}>Delete</button>
     </div>

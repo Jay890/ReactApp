@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 const CreateTweet = ({ textInput, setTextInput, tweets, setTweets }) => {
   // Functions
@@ -10,7 +11,7 @@ const CreateTweet = ({ textInput, setTextInput, tweets, setTweets }) => {
     e.preventDefault();
     console.log("hii");
     // spread operator, clone the array and add the textInput
-    setTweets([...tweets, textInput]);
+    setTweets([...tweets, { message: textInput, id: uuidv4() }]);
     setTextInput("");
   };
   return (
