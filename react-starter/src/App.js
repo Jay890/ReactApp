@@ -19,7 +19,12 @@ function App() {
         tweets={tweets}
         setTweets={setTweets}
       />
-      <TweetList setName={setName} name={name} tweets={tweets} />
+      <TweetList
+        setName={setName}
+        name={name}
+        tweets={tweets}
+        setTweets={setTweets}
+      />
     </div>
   );
 }
