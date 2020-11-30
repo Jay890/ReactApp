@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 
-const CreateTweet = () => {
-  // State
-  const [textInput, setTextInput] = useState("");
-  // create empty array to hold data when hit submit button
-  const [tweets, setTweets] = useState([]);
-
+const CreateTweet = ({ textInput, setTextInput, tweets, setTweets }) => {
   // Functions
   // change function to get user input
   const userInputHander = (e) => {
