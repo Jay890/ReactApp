@@ -1,4 +1,5 @@
 import React from "react";
+import t from "../styles/Tweet.module.css";
 
 const Tweet = ({ name, tweets, setTweets, tweet }) => {
   const tweetDate = "24/11/2020";
@@ -7,7 +8,7 @@ const Tweet = ({ name, tweets, setTweets, tweet }) => {
   };
   return (
     <div className="tweet">
-      <h2>{name}</h2>
+      <h2 className={t.title}>{name}</h2>
       <p>{tweet.message}</p>
       <button>Like</button>
       <button onClick={deleteTweet}>Delete</button>
