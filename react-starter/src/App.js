@@ -2,7 +2,6 @@ import React, { useState } from "react";
 // Import Component
 import CreateTweet from "./components/CreateTweet";
 import TweetList from "./components/TweetList";
-import s from "./styles/App.module.css";
 
 function App() {
   // simple JS code e.g variables, functions
@@ -14,7 +13,7 @@ function App() {
   // JSX code
   return (
     <div className="box">
-      <h2 className={s.title}>Twitter Light</h2>
+      <h2>Twitter Light</h2>
       <CreateTweet
         textInput={textInput}
         setTextInput={setTextInput}
