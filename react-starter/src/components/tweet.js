@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/Tweet.scss";
 
 const Tweet = ({ name, tweets, setTweets, tweet }) => {
@@ -6,6 +6,11 @@ const Tweet = ({ name, tweets, setTweets, tweet }) => {
   const deleteTweet = () => {
     setTweets(tweets.filter((state) => state.id !== tweet.id));
   };
+
+  useEffect(() => {
+    console.log("we ran a function");
+  }, []);
+
   return (
     <div className="tweet">
       <h2>{name}</h2>

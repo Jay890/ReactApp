@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // Import Component
 import CreateTweet from "./components/CreateTweet";
 import TweetList from "./components/TweetList";
@@ -10,6 +10,11 @@ function App() {
   const [textInput, setTextInput] = useState("");
   // create empty array to hold data when hit submit button
   const [tweets, setTweets] = useState([]);
+
+  useEffect(() => {
+    console.log("we ran a function");
+  }, [tweets]);
+
   // JSX code
   return (
     <div className="box">
