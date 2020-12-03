@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     console.log("we ran a function");
-  }, [tweets]);
+  }, [textInput]);
 
   // JSX code
   return (
