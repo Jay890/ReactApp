@@ -10,4 +10,4 @@ const Song = () => {
   );
 };
 
-export default Player;
+export default Song;
