@@ -10,6 +10,10 @@ h3 {
   color: rgb(47, 160, 212);
 }
 
+body {
+  font-family: "Crimson Text", serif;
+}
+
 @import "./_song";
 @import "./_player";
 @import "./_library";
